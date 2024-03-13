@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seguro Fácil - Inicio</title>
+
+    <script type="module" src="/codigo_ws.2/components/crear_presupuesto/crear-presupuesto.js"></script>
+    <script type="module" src="/codigo_ws.2/components/recuperar_presupuesto/recuperar-presupuesto.js"></script>
+    <script type="module" src="/codigo_ws.2/components/contratar/contratar-seguro.js"></script>
+    <script defer src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="header">
+        <img src="/codigo_ws.2/img/logo.jpg" alt="Logo Seguro Fácil" class="header-logo">
+        <div class="header-text">
+            <h1>Seguro Fácil</h1>
+            <p>Calcula el seguro de tu vehículo de manera rápida y sencilla.</p>
+        </div>
+    </header>
+
+
+    <main class="container my-5 flex-grow-1">
+        <h1>Bienvenido a Seguro Fácil</h1>
+        <h2 class="mb-4">Seleccione una opción</h2>
+        <div class="botonesInicio">
+            <button id="btnCrear" class="btnCrear">Crear Presupuesto</button>
+            <button id="btnRecuperar" class="btnRecuperar">Recuperar Presupuesto</button>
+        </div>
+        <div id="contenido"></div>
+    </main>
+
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row gap-4">
+                <div>
+                    <h6 class="mb-2" style="cursor:pointer" data-bs-toggle="collapse" href="#collapseQuienesSomos"
+                        role="button" aria-expanded="false" aria-controls="collapseQuienesSomos">
+                        Quiénes somos
+                    </h6>
+                    <div class="collapse" id="collapseQuienesSomos">
+                        <p class="mb-0">Seguro Fácil es una compañía dedicada a ofrecer los mejores seguros de vehículos
+                            con rapidez y transparencia.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="mb-2" style="cursor:pointer" data-bs-toggle="collapse" href="#collapseDondeEstamos"
+                        role="button" aria-expanded="false" aria-controls="collapseDondeEstamos">
+                        Dónde estamos
+                    </h6>
+                    <div class="collapse" id="collapseDondeEstamos">
+                        <p class="mb-0">Av. de la Seguridad 123, Ciudad Segura, España.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="mb-2" style="cursor:pointer" data-bs-toggle="collapse" href="#collapseContacto"
+                        role="button" aria-expanded="false" aria-controls="collapseContacto">
+                        Información de contacto
+                    </h6>
+                    <div class="collapse" id="collapseContacto">
+                        <p class="mb-0">Email: info@segurofacil.com</p>
+                        <p class="mb-0">Tel: 123-456-789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

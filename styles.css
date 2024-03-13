@@ -1,0 +1,166 @@
+/* Layout base para mantener footer abajo */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cuerpo que empuja el contenido principal */
+body {
+    background-image: url('/codigo_ws.2/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* Se adapta al tamaño del viewport */
+    background-attachment: fixed;
+    /* La imagen se queda fija al hacer scroll */
+    background-color: aquamarine;
+    /* Fondo por si la imagen no carga */
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    gap: 15px;
+    background-color: lightseagreen;
+    padding: 15px 20px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* centra horizontalmente */
+    text-align: center;
+}
+
+.header-logo {
+    max-width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.header-text h1,
+.header-text p {
+    margin: 0;
+}
+
+
+/* Main section */
+main {
+    color: white;
+    padding: 2rem;
+    text-align: left; /* Cambiado de center a left */
+    flex: 1;
+}
+
+.opciones {
+    margin-bottom: 2rem;
+}
+
+.opciones button {
+    margin: 0 1rem;
+}
+
+/* Formularios centrados */
+form {
+    max-width: 600px;
+    margin: 0; /* Quita auto para no centrar */
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+button {
+  background-color: lightseagreen !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2em;
+}
+
+button:hover {
+  background-color: #20b2aa !important; /* más oscuro al pasar el cursor */
+}
+
+
+/* Footer */
+footer h6 {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.1rem;
+    margin-top: 0.75rem;
+}
+
+footer .collapse {
+    margin-top: 0.5rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    color: white;
+}
+
+.custom-footer {
+    background-color: lightseagreen;
+    text-align: center;
+    color: white;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+.custom-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .header-logo {
+        max-width: 60px;
+    }
+
+    .custom-footer .container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        text-align: left;
+    }
+}
