@@ -2,3 +2,4 @@
 R00 - Creación de la base de datos
 R01F01T02 - Formulario vehículo
 R01F02T01 - Lógica cálculo presupuesto
+R01F02T02 - Validaciones y pruebas
