@@ -4,3 +4,4 @@ R01F01T02 - Formulario vehículo
 R01F02T01 - Lógica cálculo presupuesto
 R01F02T02 - Validaciones y pruebas
 R01F03T01 - Guardado en BBDD
+R01F03T02 - Comprobación de guardado
