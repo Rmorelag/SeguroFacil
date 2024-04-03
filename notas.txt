@@ -6,3 +6,4 @@ R01F02T02 - Validaciones y pruebas
 R01F03T01 - Guardado en BBDD
 R01F03T02 - Comprobación de guardado
 R01F04T01 - Recogida de datos restantes
+R01F04T02 - Integración PayPal (sandbox)
