@@ -7,3 +7,4 @@ R01F03T01 - Guardado en BBDD
 R01F03T02 - Comprobación de guardado
 R01F04T01 - Recogida de datos restantes
 R01F04T02 - Integración PayPal (sandbox)
+R01F04T03 - Registro en BBDD + relación
